@@ -35,7 +35,32 @@ var rows = data.map(function (row) {
 class App extends Component {
   render() {
     return (
-      <table>
+      <div>
+        <table>
+          <thead>
+            <th>Name</th>
+            <th>Value</th>
+            <th>Location</th>
+          </thead>
+          {rows}
+        </table>
+        <div className="brick">
+          <div className="content">
+            <div className="color">
+              <div className="palette" />
+              <h1>alert</h1>
+            </div>
+            <div className="action">
+              <p>value</p>
+              <button className="buyButton" >
+                Dismiss
+          </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      /*<table>
         <thead>
           <th>Name</th>
           <th>Value</th>
@@ -43,6 +68,7 @@ class App extends Component {
         </thead>
         {rows}
       </table>
+      */
     );
   }
 }
