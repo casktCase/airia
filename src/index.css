@@ -8,6 +8,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+div#banner { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  background-color: rgb(66, 66, 66); 
+  width: 100%; 
+}
+div#banner-content { 
+  width: 800px; 
+  margin: 0 auto; 
+  padding: 10px;
+  color: #fff; 
+}
+div#main-content { 
+  padding-top: 70px;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -83,7 +101,7 @@ body {
 
   width: 68px;
   height: 25px;
-  background: linear-gradient(270deg, rgb(17, 0, 255) -13.97%, rgb(21, 255, 0) 105.15%);
+  background: linear-gradient(270deg, rgb(95, 95, 95) -13.97%, rgb(172, 172, 172) 105.15%);
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   border: none;
@@ -114,7 +132,7 @@ body {
   left: 5px;
   top: -10px;
 
-  background: rgb(44, 255, 16);
+  background: rgb(243, 243, 243);
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
 }

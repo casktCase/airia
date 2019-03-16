@@ -4,12 +4,12 @@ import './App.css';
 ///JSON data rpresenting readings from IoT
 var data = [
   {
-    "name": "Temperature",
+    "name": "Temp",
     "value": "67",
     "location": "Room 1"
   },
   {
-    "name": "Humidity",
+    "name": "Humi",
     "value": "45",
     "location": "Room 1"
   },
@@ -23,52 +23,30 @@ var data = [
 
 //data map function to show in table
 var rows = data.map(function (row) {
-  return <tr>
-    <td>{row.name}</td>
-    <td>{row.value}</td>
-    <td>{row.location}</td>
-  </tr>
+  return <div className="brick">
+    <div className="content">
+      <div className="color">
+        <div className="palette" />
+        <h1>{row.value}</h1>
+      </div>
+      <div className="action">
+        <p>{row.name}</p>
+        <button className="buyButton" >
+          Dismiss
+        </button>
+      </div>
+    </div>
+  </div>
 });
-
-
 
 class App extends Component {
   render() {
     return (
+
       <div>
-        <table>
-          <thead>
-            <th>Name</th>
-            <th>Value</th>
-            <th>Location</th>
-          </thead>
-          {rows}
-        </table>
-        <div className="brick">
-          <div className="content">
-            <div className="color">
-              <div className="palette" />
-              <h1>alert</h1>
-            </div>
-            <div className="action">
-              <p>value</p>
-              <button className="buyButton" >
-                Dismiss
-          </button>
-            </div>
-          </div>
-        </div>
+        {rows}
       </div>
 
-      /*<table>
-        <thead>
-          <th>Name</th>
-          <th>Value</th>
-          <th>Location</th>
-        </thead>
-        {rows}
-      </table>
-      */
     );
   }
 }
