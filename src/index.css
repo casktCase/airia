@@ -144,3 +144,19 @@ button:focus {
 button:active {
   box-shadow: none;
 }
+
+
+#footer {
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    padding: 3em 0em;
+		text-align: center;
+		color: #333;
+		background: #888;
+}
+
+#footer a {
+	text-decoration: none;
+		color: #f9f9f9;
+}

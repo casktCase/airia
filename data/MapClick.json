@@ -1,0 +1,135 @@
+{
+	"operationalMode":"Production",
+	"srsName":"WGS 1984",
+	"creationDate":"2019-03-16T02:44:22-06:00",
+	"creationDateLocal":"16 Mar 09:06 am MDT",
+	"productionCenter":"Denver-Boulder, CO",
+	"credit":"https://www.weather.gov/bou",
+	"moreInformation":"http://weather.gov",
+	"location":{
+		"region":"crh",
+		"latitude":"39.14",
+		"longitude":"-104.5",
+		"elevation":"6995",
+		"wfo":"BOU",
+		"timezone":"M|Y|7",
+		"areaDescription":"6 Miles SSE Elbert CO",
+		"radar":"KFTG",
+		"zone":"COZ041",
+		"county":"COC039",
+		"firezone":"COZ241",
+		"metar":"KMNH"
+},
+	"time":{
+		"layoutKey":"k-p12h-n13-1",
+		"startPeriodName":[
+			"Today",
+			"Tonight",
+			"Sunday",
+			"Sunday Night",
+			"Monday",
+			"Monday Night",
+			"Tuesday",
+			"Tuesday Night",
+			"Wednesday",
+			"Wednesday Night",
+			"Thursday",
+			"Thursday Night",
+			"Friday"
+		],
+		"startValidTime":[
+			"2019-03-16T09:00:00-06:00",
+			"2019-03-16T18:00:00-06:00",
+			"2019-03-17T06:00:00-06:00",
+			"2019-03-17T18:00:00-06:00",
+			"2019-03-18T06:00:00-06:00",
+			"2019-03-18T18:00:00-06:00",
+			"2019-03-19T06:00:00-06:00",
+			"2019-03-19T18:00:00-06:00",
+			"2019-03-20T06:00:00-06:00",
+			"2019-03-20T18:00:00-06:00",
+			"2019-03-21T06:00:00-06:00",
+			"2019-03-21T18:00:00-06:00",
+			"2019-03-22T06:00:00-06:00"
+		],
+		"tempLabel":["High","Low","High","Low","High","Low","High","Low","High","Low","High","Low","High"]
+	},
+	"data":{
+		"temperature":["41","24","44","24","44","26","46","27","53","31","56","34","53"],
+		"pop":[null,null,null,null,"20","30",null,null,null,null,null,null,null],
+
+		"weather":[
+			"Sunny",
+			"Mostly Clear",
+			"Sunny",
+			"Partly Cloudy",
+			"Mostly Sunny then Slight Chance Rain/Snow",
+			"Chance Rain/Snow then Slight Chance Snow Showers",
+			"Mostly Sunny",
+			"Partly Cloudy",
+			"Sunny",
+			"Partly Cloudy",
+			"Mostly Sunny",
+			"Slight Chance Showers and Breezy then Mostly Cloudy",
+			"Partly Sunny"
+			],
+		"iconLink":[
+			"http://forecast.weather.gov/newimages/medium/few.png",
+			"http://forecast.weather.gov/newimages/medium/nfew.png",
+			"http://forecast.weather.gov/newimages/medium/few.png",
+			"http://forecast.weather.gov/newimages/medium/nsct.png",
+            "http://forecast.weather.gov/DualImage.php?i=sct&j=ra_sn&jp=20",
+            "http://forecast.weather.gov/DualImage.php?i=nra_sn&j=nsn&ip=30&jp=20",
+			"http://forecast.weather.gov/newimages/medium/sct.png",
+			"http://forecast.weather.gov/newimages/medium/nsct.png",
+			"http://forecast.weather.gov/newimages/medium/few.png",
+			"http://forecast.weather.gov/newimages/medium/nsct.png",
+			"http://forecast.weather.gov/newimages/medium/sct.png",
+            "http://forecast.weather.gov/DualImage.php?i=nshra&j=nbkn&ip=0",
+			"http://forecast.weather.gov/newimages/medium/bkn.png"
+			],
+		"hazard":[
+
+			],
+		"hazardUrl":[
+
+			],
+		"text":[
+			"Sunny, with a high near 41. Northwest wind around 6 mph becoming east southeast in the afternoon. ",
+			"Mostly clear, with a low around 24. Southeast wind 5 to 10 mph becoming south southwest after midnight. ",
+			"Sunny, with a high near 44. Southwest wind 7 to 9 mph becoming northeast in the afternoon. ",
+			"Partly cloudy, with a low around 24. Northeast wind 5 to 8 mph becoming south after midnight. ",
+			"A slight chance of rain and snow showers before 3pm, then a slight chance of rain showers between 3pm and 5pm, then a slight chance of rain and snow showers after 5pm.  Mostly sunny, with a high near 44. South wind 7 to 10 mph.  Chance of precipitation is 20%.",
+			"A chance of rain and snow showers before 9pm, then a chance of snow showers.  Mostly cloudy, with a low around 26. Chance of precipitation is 30%.",
+			"Mostly sunny, with a high near 46.",
+			"Partly cloudy, with a low around 27.",
+			"Sunny, with a high near 53.",
+			"Partly cloudy, with a low around 31.",
+			"Mostly sunny, with a high near 56.",
+			"A slight chance of showers.  Mostly cloudy, with a low around 34. Breezy. ",
+			"Partly sunny, with a high near 53."			]
+		},
+		"currentobservation":{
+			"id":"KMNH",
+			"name":"Elbert Mountain, Monument Pass",
+			"elev":"7060",
+			"latitude":"39.22",
+			"longitude":"-104.63",
+			"Date":"16 Mar 09:06 am MDT",
+			"Temp":"28",
+			"Dewp":"18",
+			"Relh":"64",
+			"Winds":"0",
+			"Windd":"NA",
+			"Gust":"0",
+			"Weather":"Fair",
+			"Weatherimage":"sct.png",
+			"Visibility":"10.00",
+			"Altimeter":"NA",
+			"SLP":"30.34",
+			"timezone":"MDT",
+			"state":"CO",
+			"WindChill":"NA"
+		}
+	}
+	
