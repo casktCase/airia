@@ -1,162 +1,50 @@
 body {
+  background-color: rgb(0, 150, 150);
+  padding: 20px;
   margin: 0;
-  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
-div#banner { 
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  background-color: rgb(66, 66, 66); 
-  width: 100%; 
+h1, h2, p, ul, li {
+  font-family: sans-serif;
 }
-div#banner-content { 
-  width: 800px; 
-  margin: 0 auto; 
-  padding: 10px;
-  color: #fff; 
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
 }
-div#main-content { 
-  padding-top: 70px;
+ul.header {
+  background-color: #111;
+  padding: 0;
 }
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,800");
-
-body {
-  font-family: "Nunito Sans", sans-serif;
-  background: #f9f9f9;
-}
-
-.wall {
-  /* columns:4;
-  column-gap: 1em; */
-  max-width: 800px;
-  display: block;
-  margin: auto;
-  padding-top: 60px;
-}
-
-.brick {
-  margin: 20px;
-  height: 180px;
-  width: 170px;
-  margin-bottom: 1em;
-  clear: both;
-  background: #fff;
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
-  transition: all 0.5s;
-  border-radius: 6px;
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
   display: inline-block;
 }
-
-.brick:hover {
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2) !important;
+.content {
+  background-color: #FFF;
+  padding: 20px;
 }
-
-.color {
-  grid-area: color;
-  position: relative;
-  height: 120px !important;
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
 }
 
 .content {
-  height: 100%;
+  height: 98%;
   display: grid;
-  grid-template-columns: 10px auto 10px;
+  /* grid-template-columns: 10px auto 10px;*/
   grid-template-areas:
     ". color ."
     ". action .";
-}
-
-.action {
-  /* border: 1px solid red; */
-  grid-area: action;
-
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.action p {
-  /* padding: 0; */
-  font-weight: 800;
-  margin: auto;
-}
-
-.buyButton {
-  cursor: pointer;
-
-  font-weight: 800;
-  color: #fff;
-
-  width: 68px;
-  height: 25px;
-  background: linear-gradient(270deg, rgb(95, 95, 95) -13.97%, rgb(172, 172, 172) 105.15%);
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  border: none;
-
-  position: relative;
-  top: 50%;
-  left: 15%;
-  transform: translateY(-50%);
-  transition: box-shadow 0.2s;
-}
-
-.color h1 {
-  position: absolute;
-  z-index: 2;
-
-  font-size: 46px;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-}
-
-.palette {
-  /* border: 1px solid red; */
-  position: absolute;
-  height: 140px;
-  width: 140px;
-  left: 5px;
-  top: -10px;
-
-  background: rgb(243, 243, 243);
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-}
-
-button:focus {
-  outline: 0;
-}
-
-button:active {
-  box-shadow: none;
-}
-
-
-#footer {
-    position:fixed;
-    bottom:0;
-    width: 100%;
-    padding: 3em 0em;
-		text-align: center;
-		color: #333;
-		background: #888;
-}
-
-#footer a {
-	text-decoration: none;
-		color: #f9f9f9;
 }

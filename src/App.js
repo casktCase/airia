@@ -1,52 +1,19 @@
 import React, { Component } from 'react';
+import logo from './logo.svg';
 import './App.css';
-
-///JSON data rpresenting readings from IoT
-var data = [
-  {
-    "name": "Temp",
-    "value": "67",
-    "location": "Room 1"
-  },
-  {
-    "name": "Humi",
-    "value": "45",
-    "location": "Room 1"
-  },
-  {
-    "name": "Water",
-    "value": "False",
-    "location": "Well"
-  }
-
-];
-
-//data map function to show in table
-var rows = data.map(function (row) {
-  return <div className="brick">
-    <div className="content">
-      <div className="color">
-        <div className="palette" />
-        <h1>{row.value}</h1>
-      </div>
-      <div className="action">
-        <p>{row.name}</p>
-        <button className="buyButton" >
-          Dismiss
-        </button>
-      </div>
-    </div>
-  </div>
-});
 
 class App extends Component {
   render() {
     return (
-
-      <div>
-        {rows}
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
       </div>
-
     );
   }
 }

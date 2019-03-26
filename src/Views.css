@@ -1,0 +1,94 @@
+
+.wall {
+    /* columns:4;
+    column-gap: 1em; */
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    padding-top: 60px;
+  }
+  
+  .brick {
+    margin: 20px;
+    height: 180px;
+    width: 170px;
+    margin-bottom: 1em;
+    clear: both;
+    background: #fff;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+    border-radius: 6px;
+    display: inline-block;
+  }
+  
+  .brick:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .color {
+    grid-area: color;
+    position: relative;
+    height: 120px !important;
+  }
+
+  
+.action {
+    /* border: 1px solid red; */
+    grid-area: action;
+  
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+  .action p {
+    /* padding: 0; */
+    font-weight: 800;
+    margin: auto;
+  }
+  
+  .buyButton {
+    cursor: pointer;
+    font-weight: 800;
+    color: #fff;
+    width: 68px;
+    height: 25px;
+    background: linear-gradient(270deg,rgb(0, 150, 150) -13.97%, rgb(172, 172, 172) 105.15%);
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    border: none;
+    position: relative;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    transition: box-shadow 0.2s;
+  }
+  
+  .color h1 {
+    position: absolute;
+    z-index: 2;
+    font-size: 46px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  
+  .palette {
+    /* border: 1px solid red; */
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    left: -13px;
+    top: -10px;
+    background: rgb(243, 243, 243);
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+  }
+  
+  button:focus {
+    outline: 0;
+  }
+  
+  button:active {
+    box-shadow: none;
+  }
+  
