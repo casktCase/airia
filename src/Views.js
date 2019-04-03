@@ -9,7 +9,7 @@ var data = [
     },
     {
         "name": "cam2",
-        "value": "45",
+        "value": "556",
         "location": "Room 2"
     },
     {
