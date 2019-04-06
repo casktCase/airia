@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState } from "react";
 const Task = ({ task }) => <div className="task">{task.text}</div>;
 
 function TaskForm({ addTask }) {
@@ -25,18 +25,6 @@ function TaskForm({ addTask }) {
 
 function Tasks() {
 
-    const initialCount = () => Number(window.localStorage.getItem('count') || 0);
-
-
-    const [count, setCount] = useState(initialCount);
-    useEffect(
-        () => {
-            window.localStorage.setItem('count', count)
-        },
-        [count],
-
-    )
-
     const [tasks, setTasks] = useState([
         { text: "preset task for motion sensor" },
         { text: "reed sensor check" },
@@ -50,11 +38,6 @@ function Tasks() {
 
     return (
         <div className="app">
-            <p>The alert was reset {count} times&nbsp;
-                <button onClick={() => setCount(count + 1)}>
-                    Reset alarm
-                </button>
-            </p>
             <div className="task-list">
                 {tasks.map((task, index) => (
                     <Task
