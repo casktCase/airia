@@ -33,7 +33,7 @@ var rows = data.map(function (row) {
             <div className="action">
                 <p>{row.name}</p>
                 <button className="buyButton" >
-                    Dismiss
+                    Detail
           </button>
             </div>
         </div>

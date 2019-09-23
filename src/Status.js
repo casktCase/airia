@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
 import useAxios from 'axios-hooks';
+
 function Status() {
 
     //Loading data served from express is at http://url:port/(dir)
     //https://github.com/simoneb/axios-hooks
     //Refetch timer is set for every 10 seconds
-    
-    const [{ data, loading, error }, refetch] = useAxios(
+    //removed loading, error from declaration const [{ data, loading, error }
+    const [{data}, refetch] = useAxios(
         '/temp'
       )
-
-      var timer = setInterval(()=>  refetch('/temp'), 10000)
 
     //this stores a number in local session.  It indicates to the user 
     //how many times a reset button was clicked
@@ -33,7 +32,9 @@ function Status() {
             </p>
             <div>
       <button id="btnRefetch" onClick={refetch}>refetch</button>
-      <pre>{ JSON.stringify(data, null, 2) }</pre>
+      { JSON.stringify(data, null, 2) }
+
+      
     </div>
         </div>
     );
